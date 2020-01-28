@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "NODE_ENV=dev nodemon src/index.ts",
+		"dev": "NODE_ENV=dev nodemon src/index.ts",
 		"build": "tsc -p ."
 	},
 	"repository": {
@@ -20,9 +20,10 @@
 	},
 	"dependencies": {
 		"@types/dotenv-safe": "^8.1.0",
+		"apollo-server": "2.5.0",
+		"apollo-server-core": "^2.9.16",
 		"body-parser": "^1.19.0",
 		"dotenv-safe": "^8.2.0",
-		"apollo-server": "2.5.0",
 		"pg": "7.11.0",
 		"postgraphile": "4.4.0",
 		"postgraphile-apollo-server": "0.1.1"
